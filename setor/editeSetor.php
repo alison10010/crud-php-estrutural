@@ -1,4 +1,4 @@
-<?php include("../template-sub-pasta/inicioPage.php");  ?>
+<?php include("../template/inicioPage.php");  ?>
 
 <!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID DO SETOR PASSADO-->
 <?php
@@ -32,5 +32,5 @@
   </div>
 </div>
 
-<?php include("../template-sub-pasta/fimPage.php"); ?>
+<?php include("../template/fimPage.php"); ?>
 

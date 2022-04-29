@@ -4,10 +4,10 @@
 
     $rec=$_POST["id"];
 
-    if(!mysqli_query($conexao, "UPDATE setor set status = 0 where id=$rec")){
+    if(!mysqli_query($conexao, "UPDATE cargo set status = 0 where id=$rec")){
         header("location: ../errorPage.php");
     }else{
-        header("location: ../setor/listaSetor.php");
+        header("location: ../cargo/listaCargo.php");
     }
 
 ?>

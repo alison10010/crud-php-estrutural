@@ -1,4 +1,4 @@
-<?php include("../template-sub-pasta/inicioPage.php");  ?>
+<?php include("../template/inicioPage.php");  ?>
 
 <div class="container">
   <h3>Cadastro de Setor</h3>
@@ -21,5 +21,5 @@
   </div>
 </div>
 
-<?php include("../template-sub-pasta/fimPage.php"); ?>
+<?php include("../template/fimPage.php"); ?>
 

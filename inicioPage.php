@@ -35,8 +35,8 @@
 
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cargo<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Cadastrar</a></li>
-          <li><a href="#">Listar</a></li>
+          <li><a href="cargo/cadastroCargo.php">Cadastrar</a></li>
+          <li><a href="cargo/listaCargo.php">Listar</a></li>
         </ul>
       </li>
 

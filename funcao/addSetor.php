@@ -1,5 +1,5 @@
 <?php 
-
+    /* CADASTRA COM STATUS DE ATIVO(1) */
     include('conexao.php');
 
     $nomeSetor = $_POST['nomeSetor'];
