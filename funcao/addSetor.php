@@ -6,9 +6,9 @@
     $descricaoSetor = $_POST['descricaoSetor'];
 
     if(!mysqli_query($conexao, "INSERT INTO setor (nomeSetor, descricaoSetor, status) values ('$nomeSetor', '$descricaoSetor', 1)")){
-        echo "Erro ao inserir";
+        header("location: ../errorPage.php");
     }else{
-        echo "Salvo";
+        header("location: ../setor/listaSetor.php");
     }
 
 ?>
