@@ -6,14 +6,14 @@
 
   <br />
   <div id="form">
-    <form action="../funcao/addSetor.php">
+    <form action="../funcao/addSetor.php" method="post">
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
+            <label for="nomeSetor">Nome do Setor:</label>
+            <input type="txt" class="form-control" id="nomeSetor" name="nomeSetor">
         </div>
         <div class="form-group">
-            <label for="pwd">Senha de acesso:</label>
-            <input type="password" class="form-control" id="senha" name="senha">
+            <label for="descricaoSetor">Descricao do Setor:</label>
+            <input type="txt" class="form-control" id="descricaoSetor" name="descricaoSetor">
         </div>
 
         <button type="submit" class="btn btn-default">Cadastrar</button>

@@ -6,7 +6,7 @@
 
   <br />
   <div id="form">
-    <form action="../funcao/addFuncionario.php">
+    <form action="../funcao/addFuncionario.php" method="post"> 
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" name="email">

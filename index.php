@@ -14,7 +14,6 @@
             <label for="pwd">Senha de acesso:</label>
             <input type="password" class="form-control" id="senha" name="senha">
         </div>
-
         <button type="submit" class="btn btn-default">Cadastrar</button>
     </form>
   </div>

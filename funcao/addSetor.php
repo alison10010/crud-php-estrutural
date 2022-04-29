@@ -3,14 +3,12 @@
     include('conexao.php');
 
     $nomeSetor = $_POST['nomeSetor'];
-    $quantidadeFun = $_POST['quantidadeFun'];
     $descricaoSetor = $_POST['descricaoSetor'];
 
-    if(!mysqli_query($conexao, "INSERT INTO setor (nomeSetor, quantidadeFun, descricaoSetor) values ('$nomeSetor', '$quantidadeFun', '$descricaoSetor')")){
+    if(!mysqli_query($conexao, "INSERT INTO setor (nomeSetor, descricaoSetor, status) values ('$nomeSetor', '$descricaoSetor', 1)")){
         echo "Erro ao inserir";
     }else{
         echo "Salvo";
     }
-    
 
 ?>
