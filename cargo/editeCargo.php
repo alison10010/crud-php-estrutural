@@ -4,7 +4,6 @@
 <?php
   include("../funcao/conexao.php");
   $rec = $_GET["editaid"];
-
   $seleciona = mysqli_query($conexao, "SELECT * FROM cargo where id=$rec");
   $campo = mysqli_fetch_array($seleciona);
 ?>
@@ -12,7 +11,6 @@
 <div class="container">
   <h3>Edição de Cargo</h3>
   <p>Verifique os dados antes de editar o Cargo.</p>
-
   <br />
   <div id="form">
     <form action="../funcao/editeCargo.php" method="post">
@@ -21,9 +19,24 @@
             <label for="nomeCargo">Nome do Cargo:</label>
             <input type="txt" class="form-control" id="nomeCargo" name="nomeCargo" value="<?=$campo["nomeCargo"]?>" required>
         </div>
+
         <div class="form-group">
             <label for="descricaoCargo">Descricao do Cargo:</label>
             <input type="txt" class="form-control" id="descricaoCargo" name="descricaoCargo" value="<?=$campo["descricaoCargo"]?>" required>
+        </div>
+
+        <div class="form-group">
+              <label for="setor">Setor Pertencente:</label>
+              <select name="setor" class="form-control" required>
+               <option value="">Selecione...</option>
+               <?php
+                  include("../funcao/conexao.php"); 
+                  $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
+                  while($campo=mysqli_fetch_array($seleciona)){
+                ?>
+                <option value="<?php echo $campo['id'] ?>"><?php echo $campo['nomeSetor'] ?></option>
+              <?php } ?> 
+            </select> 
         </div>
         
         <button type="submit" class="btn btn-primary">Concluir Edição</button>

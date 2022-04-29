@@ -11,6 +11,23 @@
             <label for="nomeCargo">Nome do Cargo:</label>
             <input type="txt" class="form-control" id="nomeCargo" name="nomeCargo" required>
         </div>
+
+        <div class="form-group">
+              <label for="setor">Setor Pertencente:</label>
+              <select name="setor" class="form-control" required>
+               <option value="">Selecione...</option>
+               <?php
+                  include("../funcao/conexao.php"); 
+                  $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
+                  while($campo=mysqli_fetch_array($seleciona)){
+                ?>
+                <option value="<?php echo $campo['id'] ?>"><?php echo $campo['nomeSetor'] ?></option>
+              <?php } ?> 
+            </select> 
+        </div>
+
+
+
         <div class="form-group">
             <label for="descricaoCargo">Descricao do Cargo:</label>
             <input type="txt" class="form-control" id="descricaoCargo" name="descricaoCargo" required>
