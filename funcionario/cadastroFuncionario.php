@@ -1,4 +1,4 @@
-<?php include("../inicioPage.php");  ?>
+<?php include("../template-sub-pasta/inicioPage.php");  ?>
 
 <div class="container">
   <h3>Cadastro de Funcionario</h3>
@@ -21,5 +21,5 @@
   </div>
 </div>
 
-<?php include("../fimPage.php"); ?>
+<?php include("../template-sub-pasta/fimPage.php"); ?>
 

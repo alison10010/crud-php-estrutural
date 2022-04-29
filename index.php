@@ -1,14 +1,13 @@
 <?php include("inicioPage.php");  ?>
 
 <div class="container">
-  <h3>Cadastro de Funcionario</h3>
-  <p>Verifique os dados antes de cadastrar o novo funcionario.</p>
+  <h3>Login</h3>
 
   <br />
   <div id="form">
     <form action="/action_page.php">
         <div class="form-group">
-            <label for="email">Email:</label>
+            <label for="email">Usuario:</label>
             <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
