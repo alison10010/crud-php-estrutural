@@ -1,6 +1,6 @@
 <?php include("../template-sub-pasta/inicioPage.php");  ?>
 
-<!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID -->
+<!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID DO SETOR-->
 <?php
   include("../funcao/conexao.php");
   $rec = $_GET["editaid"];
@@ -15,15 +15,15 @@
 
   <br />
   <div id="form">
-    <form action="../funcao/aditarSetor.php" method="post">
+    <form action="../funcao/editeSetor.php" method="post">
         <input type="hidden" name="id" value="<?=$campo["id"]?>">
         <div class="form-group">
-            <label for="editeNomeSetor">Nome do Setor:</label>
-            <input type="txt" class="form-control" id="editeNomeSetor" name="editeNomeSetor" value="<?=$campo["nomeSetor"]?>" required>
+            <label for="nomeSetor">Nome do Setor:</label>
+            <input type="txt" class="form-control" id="nomeSetor" name="nomeSetor" value="<?=$campo["nomeSetor"]?>" required>
         </div>
         <div class="form-group">
-            <label for="editeDescricaoSetor">Descricao do Setor:</label>
-            <input type="txt" class="form-control" id="editeDescricaoSetor" name="editeDescricaoSetor" value="<?=$campo["descricaoSetor"]?>" required>
+            <label for="descricaoSetor">Descricao do Setor:</label>
+            <input type="txt" class="form-control" id="descricaoSetor" name="descricaoSetor" value="<?=$campo["descricaoSetor"]?>" required>
         </div>
         
         <button type="submit" class="btn btn-primary">Concluir Edição</button>
