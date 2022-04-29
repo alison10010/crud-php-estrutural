@@ -9,11 +9,11 @@
     <form action="../funcao/addSetor.php" method="post">
         <div class="form-group">
             <label for="nomeSetor">Nome do Setor:</label>
-            <input type="txt" class="form-control" id="nomeSetor" name="nomeSetor">
+            <input type="txt" class="form-control" id="nomeSetor" name="nomeSetor" required>
         </div>
         <div class="form-group">
             <label for="descricaoSetor">Descricao do Setor:</label>
-            <input type="txt" class="form-control" id="descricaoSetor" name="descricaoSetor">
+            <input type="txt" class="form-control" id="descricaoSetor" name="descricaoSetor" required>
         </div>
 
         <button type="submit" class="btn btn-default">Cadastrar</button>
