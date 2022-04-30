@@ -2,9 +2,8 @@
 
 <!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID DO CARGO PASSADO -->
 <?php
-  include("../funcao/conexao.php");
   $rec = $_GET["editaid"];
-
+  
   $seleciona = mysqli_query($conexao, "SELECT * FROM cargo where id=$rec");
   $campo = mysqli_fetch_array($seleciona);
 ?>

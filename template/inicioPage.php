@@ -1,3 +1,7 @@
+
+
+<!-- CONEXAO COM O BANCO DE DADOS PARA TODAS AS SQL -->
+<?php include("../funcao/conexao.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

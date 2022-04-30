@@ -17,7 +17,7 @@
               <select name="setor" class="form-control" required>
                <option value="">Selecione...</option>
                <?php
-                  include("../funcao/conexao.php"); 
+                  /* LISTA DE SETORES CADASTRADOS ATIVOS */
                   $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
                   while($campo=mysqli_fetch_array($seleciona)){
                 ?>
@@ -25,8 +25,6 @@
               <?php } ?> 
             </select> 
         </div>
-
-
 
         <div class="form-group">
             <label for="descricaoCargo">Descricao do Cargo:</label>

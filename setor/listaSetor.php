@@ -16,7 +16,6 @@
         </thead>
         <tbody>
             <?php /* BUSCA NO BD E MOSTRA LISTA EM ORDER DE ID DESC*/
-                include("../funcao/conexao.php");
                 $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
                 while($campo=mysqli_fetch_array($seleciona)){
                 ?>

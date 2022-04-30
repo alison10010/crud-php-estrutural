@@ -16,8 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php /* BUSCA NO BD E MOSTRA LISTA EM ORDER DE ID DESC*/
-                include("../funcao/conexao.php"); 
+            <?php
                 /* BUSCA NA TABELA RELACIONADA (SETOR) PELO ID INFORMADO NO CAMPO "SETOR" DA TABELA CARGO  */
                 $seleciona = mysqli_query($conexao, "SELECT c.*, 
                 s.nomeSetor FROM cargo c LEFT JOIN setor AS s ON s.id=c.setor ORDER BY c.id desc");

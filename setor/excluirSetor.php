@@ -2,7 +2,6 @@
 
 <!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID DO SETOR PASSADO -->
 <?php
-  include("../funcao/conexao.php");
   $rec = $_GET["editaid"];
 
   $seleciona = mysqli_query($conexao, "SELECT * FROM setor where id=$rec");

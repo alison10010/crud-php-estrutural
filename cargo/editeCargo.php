@@ -2,9 +2,9 @@
 
 <!-- BUSCA OS DADOS NO BD DE ACORDO COM O ID DO CARGO PASSADO-->
 <?php
-  include("../funcao/conexao.php");
-  $rec = $_GET["editaid"];
-  $seleciona = mysqli_query($conexao, "SELECT * FROM cargo where id=$rec");
+  $rec = $_GET["editaid"];/* BUSCA NA TABELA RELACIONADA (SETOR) PELO ID INFORMADO NO CAMPO "SETOR" DA TABELA CARGO  */
+  $seleciona = mysqli_query($conexao, "SELECT c.*, 
+  s.nomeSetor FROM cargo c LEFT JOIN setor AS s ON s.id=c.setor where c.id=$rec");
   $campo = mysqli_fetch_array($seleciona);
 ?>
 
@@ -28,9 +28,8 @@
         <div class="form-group">
               <label for="setor">Setor Pertencente:</label>
               <select name="setor" class="form-control" required>
-               <option value="">Selecione...</option>
+               <option value="<?php echo $campo['setor'] ?>"><?php echo $campo['nomeSetor'] ?></option>
                <?php
-                  include("../funcao/conexao.php"); 
                   $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
                   while($campo=mysqli_fetch_array($seleciona)){
                 ?>
