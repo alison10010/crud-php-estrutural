@@ -9,8 +9,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- MASCARA PARA INPUT E JQUERY DA PAGE -->
+  <script src="../js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.maskedinput.js" type="text/javascript"></script>
+  <script src="../js/camposMascaras.js" type="text/javascript"></script>
+  
 </head>
 <body>
 
