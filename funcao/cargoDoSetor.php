@@ -5,11 +5,10 @@
     $id = $_POST["setor"];
 
     // FAZER A REQUISIÇÃO AO BANCO DE DADOS USANDO A VARIÁVEL
-    $seleciona = mysqli_query($conexao, "SELECT c.*, s.nomeSetor FROM cargo c LEFT JOIN setor AS s ON s.id=c.setor 
-                                WHERE c.setor = '$id' ORDER BY c.id desc");
+    $seleciona = mysqli_query($conexao, "SELECT * FROM cargo WHERE setor = '$id' ORDER BY nomeCargo ASC");
     $cargo = array();
 
-    // CRIA A LISTA DE CARGOS JSON
+    // CRIA A LISTA DE CARGOS
     while($campo=mysqli_fetch_array($seleciona)){
         $cargo [] = array(
             'id'  => $campo['id'],
