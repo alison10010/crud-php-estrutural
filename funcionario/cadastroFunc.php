@@ -8,8 +8,8 @@
   <div id="form">
     <form action="../funcao/addFuncionario.php" method="post">
         <div class="form-group">
-            <label for="nomeFuncionario">Nome do Funcionario:</label>
-            <input type="txt" class="form-control" id="nomeFuncionario" name="nomeFuncionario" required>
+            <label for="nome">Nome do Funcionario:</label>
+            <input type="txt" class="form-control" id="nome" name="nome" required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
@@ -35,7 +35,7 @@
         </div>
         <!-- O CARGO VEM VIA SCRIPT SE ACORDO COM O SETOR SELECIONADO (FIM DA PAGE) -->
         <div class="form-group">
-              <label for="cargo">Setor Pertencente:</label>
+              <label for="cargo">Cargo Pertencente:</label>
               <select id="cargo" name="cargo" class="form-control">
                   <option value="">Selecione...</option>
               </select>
