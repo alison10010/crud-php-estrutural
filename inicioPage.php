@@ -22,7 +22,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Funcionario<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="funcionario/cadastroFunc.php">Cadastrar</a></li>
-          <li><a href="#">Listar</a></li>
+          <li><a href="funcionario/listaFunc.php">Listar</a></li>
         </ul>
       </li>
 
