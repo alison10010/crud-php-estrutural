@@ -1,11 +1,32 @@
-<?php include("inicioPage.php");  ?>
+<!-- UM LAYOUT PADRÃO BOOTSTRAP COM MENUS PARA ORGANIZAR OS FORMULARIOS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Pratica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-<div class="container">
-  <h3>Login</h3>
+<!--  MENU DA PAGE ANTES DE LOGAR -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">    
+    <ul class="nav navbar-nav">
+      <li><a href="#">Funcionario</a></li>
+      <li><a href="#">Setor</a></li>
+      <li><a href="#">Cargo</a></li>
+      <li><a href="#">Relatorio</a></li>
+    </ul>
+  </div>
+</nav>
 
   <br />
-  <div id="form">
-    <form action="/action_page.php">
+  <div id="form" class="container h-100" style="width: 40%;">
+    <center><h3>Login</h3></center>
+    <br />
+    <form action="/action_page.php" method="post">
         <div class="form-group">
             <label for="email">Usuario:</label>
             <input type="email" class="form-control" id="email" name="email">
@@ -14,10 +35,11 @@
             <label for="pwd">Senha de acesso:</label>
             <input type="password" class="form-control" id="senha" name="senha">
         </div>
-        <button type="submit" class="btn btn-default">Cadastrar</button>
+        <button type="submit" class="btn btn-success">Acessar</button>
     </form>
   </div>
-</div>
 
-<?php include("fimPage.php"); ?>
+<br />
+</body>
+</html>
 

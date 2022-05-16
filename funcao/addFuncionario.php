@@ -3,6 +3,7 @@
     include('conexao.php');
 
     $nome = $_POST['nome'];
+    $nome = strtoupper($nome); // TORNA MAIUSCULA
     $email = $_POST['email'];
     $cpf = $_POST['cpf'];
     $setor = $_POST['setor'];
