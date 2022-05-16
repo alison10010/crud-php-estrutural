@@ -33,8 +33,7 @@
         <div class="form-group">
               <label for="setor">Setor Pertencente:</label>
               <select name="setor" class="form-control" id="setor" required>
-               <option value="<?=$campo["nomeSetor"]?>"><?=$campo["nomeSetor"]?></option>
-               <option value="">-----------</option>
+               <option value="<?=$campo["setor"]?>"><?=$campo["nomeSetor"]?></option>
                <?php
                   /* LISTA DE SETORES CADASTRADOS ATIVOS */
                   $seleciona = mysqli_query($conexao, "SELECT * FROM setor where status = 1 ORDER BY id desc");
@@ -47,13 +46,14 @@
         <!-- O CARGO VEM VIA SCRIPT SE ACORDO COM O SETOR SELECIONADO (FIM DA PAGE) -->
         <div class="form-group">
               <label for="cargo">Cargo Pertencente:</label>
-              <select id="cargo" name="cargo" class="form-control">
-                <option value="<?=$campo["nomeCargo"]?>"><?=$campo["nomeCargo"]?></option>
-                  <option value="">-----------</option>
+              <select id="cargo" name="cargo" class="form-control" required>
+                <option value="<?=$campo["cargo"]?>"><?=$campo["nomeCargo"]?></option>
               </select>
         </div>
 
-        <button type="submit" class="btn btn-default">Cadastrar</button>
+        <button type="submit" class="btn btn-primary">Concluir Edição</button>
+        <a type="button" class="btn btn-info btn-md" href="listaFunc.php">Cancelar</button></a>
+
     </form>
   </div>
 </div>
