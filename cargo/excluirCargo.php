@@ -18,11 +18,11 @@
         <input type="hidden" name="id" value="<?=$campo["id"]?>">
         <div class="form-group">
             <label for="nomeCargo">Nome do Cargo:</label>
-            <input type="txt" class="form-control" id="nomeCargo" name="nomeCargo" value="<?=$campo["nomeCargo"]?>" required>
+            <label class="txtExcluir"><?=$campo["nomeCargo"]?></label>
         </div>
         <div class="form-group">
             <label for="descricaoCargo">Descricao do Cargo:</label>
-            <input type="txt" class="form-control" id="descricaoCargo" name="descricaoCargo" value="<?=$campo["descricaoCargo"]?>" required>
+            <label class="txtExcluir"><?=$campo["descricaoCargo"]?></label>
         </div>
         
         <button type="submit" class="btn btn-danger">Excluir cargo</button>

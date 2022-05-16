@@ -20,7 +20,7 @@
                 /* BUSCA NA TABELA RELACIONADA PELO ID INFORMADO NO CAMPO "SETOR" E "CARGO" DA TABELA FUNCIONARIO  */
                 $seleciona = mysqli_query($conexao, "SELECT f.*, s.nomeSetor, c.nomeCargo FROM funcionario AS f /* PEGANDO APENAS 'nomeSetor' E 'nomeCargo' DE TABELA ESTRANGEIRA */ 
                                                     INNER JOIN setor AS s ON s.id = f.setor
-                                                    INNER JOIN cargo AS c ON c.id = f.cargo ORDER BY f.id desc");
+                                                    INNER JOIN cargo AS c ON c.id = f.cargo where f.status = 1 ORDER BY f.id desc");
                 while($campo=mysqli_fetch_array($seleciona)){
                 ?>
                 <tr>
