@@ -26,10 +26,10 @@
   <div id="form" class="container h-100" style="width: 40%;">
     <center><h3>Login</h3></center>
     <br />
-    <form action="/action_page.php" method="post">
+    <form action="seguranca/login.php" method="post">
         <div class="form-group">
             <label for="email">Usuario:</label>
-            <input type="email" class="form-control" id="email" name="email">
+            <input type="txt" class="form-control" id="email" name="usuario">
         </div>
         <div class="form-group">
             <label for="pwd">Senha de acesso:</label>
