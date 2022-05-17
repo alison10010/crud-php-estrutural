@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');
+    include('../seguranca/conexao.php');
 
     //Recebe o id via ajax 
     $id = $_POST["setor"];

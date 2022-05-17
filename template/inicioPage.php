@@ -25,25 +25,25 @@ include("../seguranca/verificaLogin.php");
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Pratica</a>
+      <img  class="navbar-brand" src="../img/logo.png" style="margin-left: -15px;padding: 0px 10px;">
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Inicio</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Funcionario<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Funcionario <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="../funcionario/cadastroFunc.php">Cadastrar</a></li>
           <li><a href="../funcionario/listaFunc.php">Listar</a></li>
         </ul>
       </li>
 
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Setor<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Setor <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="../setor/cadastroSetor.php">Cadastrar</a></li>
           <li><a href="../setor/listaSetor.php">Listar</a></li>
         </ul>
       </li>
 
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cargo<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cargo <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="../cargo/cadastroCargo.php">Cadastrar</a></li>
           <li><a href="../cargo/listaCargo.php">Listar</a></li>

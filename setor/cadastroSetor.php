@@ -16,7 +16,7 @@
             <input type="txt" class="form-control" id="descricaoSetor" name="descricaoSetor" required>
         </div>
 
-        <button type="submit" class="btn btn-default">Cadastrar</button>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
   </div>
 </div>

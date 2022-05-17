@@ -31,7 +31,7 @@
             <input type="txt" class="form-control" id="descricaoCargo" name="descricaoCargo" required>
         </div>
 
-        <button type="submit" class="btn btn-default">Cadastrar</button>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
   </div>
 </div>

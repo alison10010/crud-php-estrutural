@@ -1,6 +1,6 @@
 <?php 
     /* APENAS ALTERA O STATUS DE ATIVO(1) PARA INATIVO(0) */
-    include('conexao.php');
+    include('../seguranca/conexao.php');
 
     $rec=$_POST["id"];
 

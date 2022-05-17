@@ -1,6 +1,6 @@
 <?php 
     /* GRAVA EDICAO NO BD */
-    include('conexao.php');
+    include('../seguranca/conexao.php');
 
     $rec=$_POST["id"];
     $nomeCargo = $_POST['nomeCargo'];

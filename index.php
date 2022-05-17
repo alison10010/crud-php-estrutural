@@ -13,6 +13,9 @@
 <!--  MENU DA PAGE ANTES DE LOGAR -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">    
+  <div class="navbar-header">
+      <img  class="navbar-brand" src="img/logo.png" style="margin-left: -15px;padding: 0px 10px;">
+    </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Funcionario</a></li>
       <li><a href="#">Setor</a></li>

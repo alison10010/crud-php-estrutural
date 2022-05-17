@@ -1,6 +1,6 @@
 <?php 
     /* CADASTRA COM STATUS DE ATIVO(1) */
-    include('conexao.php');
+    include('../seguranca/conexao.php');
 
     $nome = $_POST['nome'];
     $nome = strtoupper($nome); // TORNA MAIUSCULA

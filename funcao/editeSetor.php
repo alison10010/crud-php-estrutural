@@ -1,6 +1,6 @@
 <?php 
 
-    include('conexao.php');
+    include('../seguranca/conexao.php');
 
     $rec=$_POST["id"];
     $nomeSetor = $_POST['nomeSetor'];
