@@ -15,10 +15,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">    
     <ul class="nav navbar-nav">
-      <li><a href="#">Funcionario</a></li>
-      <li><a href="#">Setor</a></li>
-      <li><a href="#">Cargo</a></li>
-      <li><a href="#">Relatorio</a></li>
+      <li><a href="index.php">Funcionario</a></li>
+      <li><a href="index.php">Setor</a></li>
+      <li><a href="index.php">Cargo</a></li>
+      <li><a href="index.php">Relatorio</a></li>
     </ul>
   </div>
 </nav>
