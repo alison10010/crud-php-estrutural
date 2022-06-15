@@ -1,6 +1,6 @@
 $("#setor").on("change",function() {
     
-    var setor = $(this).val(); // PEGA O VALOR DO ID DO CAMPO #setor
+    var setor = $(this).val(); // PEGA O VALOR DO ID DO CAMPO #SETOR
     
     $('#cargo').children('option:not(:first)').remove(); //LIMPA A LISTA PARA OS NOVOS VALORES
 
